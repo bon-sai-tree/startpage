@@ -1,6 +1,14 @@
-# Tilde Enhanced
+# Bonsai's Startpage
 
-Based on [Cade Scroggins](https://github.com/cadejscroggins)'s [Tilde](https://github.com/cadejscroggins/tilde).
+Based on [Tilde-Enhanced](https://github.com/Ozencb/tilde-enhanced).
+
+## Setting it up On Firefox
+
+- Go to "about:preferences#home" (Options in top right menu > home), set "Homepage and new windows" to
+Custom URLs and enter "file:///path/to/the/index.html"
+
+- Set "New tabs" to "Blank Page" then go to the installation folder of Firefox,
+"C:\Program Files\Mozilla Firefox" is default on Windows, open "defaults" then "pref" and put the "autoconfig.js" (from "firefox_cfg") there. Go back to the installation folder and paste "autoconfig.cfg" (from "Firefox_cfg") in, open it and edit the "newTabURL" to the file path of the index.html
 
 ## Screenshots 
 
