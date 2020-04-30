@@ -1,3 +1,11 @@
+/* bungee-regular - latin */
+@font-face {
+  font-family: 'Bungee';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bungee'), local('Bungee-Regular');
+}
+
 :root {
   /* colors */
   --background: #0E0E0E;
