@@ -3,7 +3,7 @@
   font-family: 'Bungee';
   font-style: normal;
   font-weight: 400;
-  src: local('Bungee'), local('Bungee-Regular');
+  src: url('Bungee-Regular.ttf');
 }
 
 :root {
