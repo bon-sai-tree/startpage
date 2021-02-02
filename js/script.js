@@ -27,20 +27,40 @@ let CONFIG = {
       category: 'General',
       name: 'Mail',
       key: 'm',
-      url: 'https://gmail.com',
+      url: 'https://webmail.bonsai-tree.ch/SOGo/',
       search: '/#search/text={}',
-      color: 'radial-gradient(circle, rgba(234,67,53,1) 29%, rgba(255,255,255,1) 100%)',
-      icon: 'mail',
+      color: 'radial-gradient(circle, rgba(207,255,158,1) 0%, rgba(70,252,112,1) 100%)',
+      icon: 'mailcow',
       quickLaunch: true,
     },
     {
       category: 'General',
       name: 'Cloud',
       key: 'c',
-      url: 'https://nextcloud.bonsai-tree.ch',
+      url: 'https://cloud.bonsai-tree.ch',
       search: '/#search/text={}',
       color: 'radial-gradient(circle, rgba(53,120,234,1) 36%, rgba(255,255,255,1) 100%)',
-      icon: 'cloud',
+      icon: 'nextcloud',
+      quickLaunch: true,
+    },
+    {
+      category: 'General',
+      name: 'Vault',
+      key: 'v',
+      url: 'https://vault.bonsai-tree.ch',
+      search: '/#search/text={}',
+      color: 'linear-gradient(297deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%',
+      icon: 'bitwarden',
+      quickLaunch: true,
+    },
+    {
+      category: 'General',
+      name: 'Threema',
+      key: 't',
+      url: 'https://web.threema.ch/#!/welcome',
+      search: '/#search/text={}',
+      color: 'linear-gradient(297deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)',
+      icon: 'threema',
       quickLaunch: true,
     },
     {
@@ -67,7 +87,7 @@ let CONFIG = {
       category: 'Letec',
       name: 'OnlineDoku',
       key: 'dok',
-      url: 'https://letecit.sharepoint.com/sites/extern/SitePages/Homepage.aspx',
+      url: 'https://letecit.sharepoint.com/sites/LetecITSolutionsAG/Lists/Kundenseiten/AllItems.aspx',
       search: '/#search/text={}',
       color: 'linear-gradient(90deg, rgba(38,145,86,1) 20%, rgba(0,194,198,1) 97%)',
       icon: 'onlinedoku',
@@ -233,12 +253,12 @@ let CONFIG = {
 };
 
 // Get invertedColors preference from cookies
-CONFIG.invertedColors = localStorage.getItem('invertColorCookie') 
+CONFIG.invertedColors = localStorage.getItem('invertColorCookie')
                       ? JSON.parse(localStorage.getItem('invertColorCookie'))
                       : CONFIG.invertedColors;
 
 // Get showKeys preference from cookies
-CONFIG.showKeys = localStorage.getItem('showKeysCookie') 
+CONFIG.showKeys = localStorage.getItem('showKeysCookie')
                 ? JSON.parse(localStorage.getItem('showKeysCookie'))
                 : CONFIG.showKeys;
 
@@ -399,10 +419,10 @@ class Help {
   _buildListCommands(currentCategory) {
     let invertValue = this._invertColors ? 1: 0;
 
-    const bgcolor = invertValue ? getComputedStyle(document.documentElement).getPropertyValue('--foreground') 
+    const bgcolor = invertValue ? getComputedStyle(document.documentElement).getPropertyValue('--foreground')
                                 : getComputedStyle(document.documentElement).getPropertyValue('--background');
 
-    const fgcolor = invertValue ? getComputedStyle(document.documentElement).getPropertyValue('--background') 
+    const fgcolor = invertValue ? getComputedStyle(document.documentElement).getPropertyValue('--background')
                                 : getComputedStyle(document.documentElement).getPropertyValue('--foreground');
 
     const commandListWithIcons =  this._commands
@@ -428,11 +448,11 @@ class Help {
               <a href="${url}" target="${this._newTab ? '_blank' : '_self'}">
                     <style>
                       .command-key-${i} {
-                        color: ${fgcolor}; 
+                        color: ${fgcolor};
                         background-color:${bgcolor};
-                        border: 4px solid ${fgcolor}; 
+                        border: 4px solid ${fgcolor};
                         background-color: ${bgcolor};
-                      }   
+                      }
                     </style>
                 <span class="command-key command-key-${i}" style="">${key}</span>
                 <span class="command-name command-name-${i}">${name}</span>
@@ -880,7 +900,7 @@ class Form {
       const bgcolor = getComputedStyle(document.documentElement).getPropertyValue('--background');
       const fgcolor = getComputedStyle(document.documentElement).getPropertyValue('--foreground');
       document.documentElement.style.setProperty('--background', fgcolor);
-      document.documentElement.style.setProperty('--foreground', bgcolor);    
+      document.documentElement.style.setProperty('--foreground', bgcolor);
     }
   }
 
