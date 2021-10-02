@@ -19,9 +19,11 @@ Custom URLs and enter "file:///path/to/the/index.html"
 Most of the features are carried over from the original source.
 Few of the added features are:
 
-- Added a "Quick Launch" functionality, which launches all the sites with `quickLaunch` property set to `true` upon entering `q!`.
-- Color theme can now be inverted easily by either editing config or using `invert!` command.
-- Added an option to show launch keys instead of icons again. Either edit config or type `keys!`. 
+- A launch category functionality, which launches every site in a category. Enter a category index number followed by `!`, i.e. `2!` would launch everything under the second category. 
+- A "Quick Launch" functionality, which launches every site with `quickLaunch` property set to `true` upon entering `q!`.
+- An invertible color theme. Either edit config or use `invert!` command.
+- Show image or SVG as bookmark icon
+- An option to show launch keys instead of icons. Either edit config or type `keys!`.
 
 ## Usage
 
@@ -75,6 +77,8 @@ URL. For example:
 - Entering `keep.google.com` would redirect you to
   [keep.google.com](https://keep.google.com/).
 
+You can also use `Ctrl + Enter` key combination to launch the query with a `.com` TLD.
+
 ### Query Paramater
 
 Additionally, you can pass any query via the `q` query param. For example:
@@ -86,7 +90,7 @@ This allows you to invoke Tilde with your native browser search bar.
 
 ## Configuration
 
-Open up the [script.js](js/script.js) file and read through the `CONFIG`!
+Open up the [config.js](js/config.js) file and read through the `CONFIG`!
 
 ## Setting it up for new tabs on Firefox
 
