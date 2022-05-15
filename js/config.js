@@ -85,6 +85,15 @@ const CONFIG = {
     },
     {
       category: 'General',
+      name: 'WhatsApp',
+      key: 'w',
+      url: 'https://web.whatsapp.com/',
+      color: 'linear-gradient(90deg, rgba(83,206,96,1) 0%, rgba(41,181,63,1) 100%)',
+      icon: 'whatsapp',
+      quickLaunch: false,
+    },
+    {
+      category: 'General',
       name: 'Pfadi',
       key: 'pan',
       url: 'https://www.pfadineuhausen.ch',
