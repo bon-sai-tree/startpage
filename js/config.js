@@ -27,7 +27,7 @@ const CONFIG = {
       category: 'General',
       name: 'Protonmail',
       key: 'm',
-      url: 'https://account.protonmail.com/login',
+      url: 'https://account.proton.me/login',
       search: '/#search/text={}',
       color: 'linear-gradient(52deg, rgba(108,73,254,1) 0%, rgba(169,149,255,1) 100%)',
       icon: 'mailcow',
