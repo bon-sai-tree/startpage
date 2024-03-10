@@ -171,6 +171,15 @@ const CONFIG = {
     },
     {
       category: 'Tech',
+      name: 'ChatGPT',
+      key: 'ai',
+      url: 'https://chat.openai.com',
+      color: 'linear-gradient(135deg, #6e42fe, #fe2d7e)',
+      icon: 'openai',
+      quickLaunch: true,
+    },
+    {
+      category: 'Tech',
       name: 'StackOverflow',
       key: 'sta',
       url: 'https://stackoverflow.com',
