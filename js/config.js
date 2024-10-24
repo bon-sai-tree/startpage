@@ -180,6 +180,15 @@ const CONFIG = {
         },
         {
             category: 'Tech',
+            name: 'Claude',
+            key: 'a',
+            url: 'https://claude.ai/new',
+            color: 'linear-gradient(128deg, rgba(248,217,197,1) 0%, rgba(216,119,87,1) 52%, rgba(248,217,197,1) 100%)',
+            icon: 'claude',
+            quickLaunch: true,
+        },
+        {
+            category: 'Tech',
             name: 'StackOverflow',
             key: 'sta',
             url: 'https://stackoverflow.com',
