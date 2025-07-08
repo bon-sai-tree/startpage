@@ -171,11 +171,11 @@ const CONFIG = {
         },
         {
             category: 'Tech',
-            name: 'ChatGPT',
+            name: 'Gemini',
             key: 'ai',
-            url: 'https://chat.openai.com',
+            url: 'https://gemini.google.com/u/1/app?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all',
             color: 'linear-gradient(135deg, #6e42fe, #fe2d7e)',
-            icon: 'openai',
+            icon: 'google',
             quickLaunch: true,
         },
         {
