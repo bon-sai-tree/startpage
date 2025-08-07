@@ -180,11 +180,11 @@ const CONFIG = {
         },
         {
             category: 'Tech',
-            name: 'Claude',
+            name: 'ChatGPT',
             key: 'a',
-            url: 'https://claude.ai/new',
-            color: 'linear-gradient(128deg, rgba(248,217,197,1) 0%, rgba(216,119,87,1) 52%, rgba(248,217,197,1) 100%)',
-            icon: 'claude',
+            url: 'https://chatgpt.com/',
+            color: 'linear-gradient(135deg, #6e42fe, #fe2d7e)',
+            icon: 'openai',
             quickLaunch: true,
         },
         {
